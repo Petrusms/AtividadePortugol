@@ -1,11 +1,12 @@
 programa {
   funcao inicio() {
     inteiro diciplinas = 6
-    inteiro resul
-    resul = 100/diciplinas
+    inteiro resul, temp = 100
+    resul = temp/diciplinas
     escreva("O tempo de estudo de cada matéria é de ", resul, " minutos")
-    resul = 100%diciplinas
+    resul = temp%diciplinas
     escreva(", e seu tempo de descanso sera de ", resul, " minutos", "\n")
 
   }
 }
+
