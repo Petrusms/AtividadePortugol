@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+   real mb, mbps, velodow, resul, resull
+
+     escreva("Qual o tamanho do arquivo em Mb?:")
+     leia(mb)
+    escreva("Qual a velocidade do link de Internet usado em Mbps?:")
+    leia(mbps)
+
+    velodow = mb/(mbps/8)
+    se(velodow<60){
+    escreva("O arquivo sera baixado em ", velodow," segundos")}
+    senao{
+    resul = velodow/60
+    escreva("O arquivo sera baixado em ", resul," minustos e ")
+    resull = velodow%60
+     escreva(resull," segundos")}
+    
+  }
+}
