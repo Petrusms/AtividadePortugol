@@ -1,0 +1,22 @@
+programa
+{
+	inclua biblioteca Texto
+ --> tx
+
+	
+	funcao inicio()
+	{
+		cadeia senha
+		inteiro carac_na_senha
+
+          escreva("Digite uma senha de 6 caracteres:")
+		leia(senha)
+		carac_na_senha = tx.numero_caracteres(senha)
+		
+		se(carac_na_senha >= 6){
+		escreva("A senha informada foi aceita por possui 6 ou mais caracteres")}
+          senao {
+          	escreva("A senha informada foi inavalida por não possuir os resquisitos de 6 caracteres")}
+		
+	}
+}
