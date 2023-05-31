@@ -1,7 +1,6 @@
 programa
 {
-	inclua biblioteca Texto
- --> tx
+	inclua biblioteca Texto--> tx
 
 	
 	funcao inicio()
