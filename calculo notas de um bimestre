@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() { real n1, n2, n3, n4, soma
+
+   escreva("Qual sua nota do 1 bimestre?:")
+   leia(n1)
+   escreva("Qual sua nota do 2 bimestre?:")
+   leia(n2)
+   escreva("Qual sua nota do 3 bimestre?:")
+   leia(n3)
+   escreva("Qual sua nota do 4 bimestre?:")
+   leia(n4)
+   
+   soma = (n1 + n2 + n3 + n4)/4
+
+   escreva("Sua média desses 4 bimestre é:", soma)
+    
+  }
+}
