@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() { //a. Escreva na tela quantos Dólares faltam para comprar umPS5
+  real ps = 1300*4.97, faltamoney, livros, money
+
+  escreva("Quantos reias você possui para comprar um PS5 de 1300 dólares?:")
+    leia(money)
+    faltamoney = (ps - money)/4.97
+    escreva("Falta ", faltamoney," dólares para comprar o PS5", "\n")
+
+    //b.Escreva na tela quantos Reais faltam para comprar um PS5
+
+    faltamoney = ps - money
+    escreva("Falta ", faltamoney," reais para comprar o PS5","\n")
+    
+  }
+}
