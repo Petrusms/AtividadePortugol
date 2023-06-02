@@ -1,0 +1,27 @@
+programa{
+
+	funcao inicio(){
+
+	logico c, t,f,dg,dr, sinto
+
+		escreva("Ola caro paciente irei fazer algumas perguntas, você tem coriza?:")
+		leia(c)
+		escreva("Você tosse?:")
+		leia(t)
+		escreva("Você sente febre?:")
+		leia(f)
+		escreva("Você tem dor de garganta?:")
+	     leia(dg)
+		escreva("Você tem dificuldade para respirar?:")
+		leia(dr)
+		sinto= c e t e f e dg
+		se(c e t e f e dg == verdadeiro)
+		{
+		escreva("Você apresenta sintomas comuns de Covid")
+		}
+		 se (sinto ou dr)
+		{
+           escreva("Você pode estar com Covid")
+		}
+ }
+} //code imcompleto
