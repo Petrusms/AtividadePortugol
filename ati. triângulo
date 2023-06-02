@@ -1,0 +1,28 @@
+programa{
+	
+	funcao inicio()
+	{
+	inteiro la,lb, lc
+		escreva("Fale a primeira medidada do triângulo:")
+		leia(la)
+		escreva("Fale a segunda medidada do triângulo:")
+		leia(lb)
+		escreva("Fale a terceira medidada do triângulo:")
+		leia(lc)
+
+   se((la+lc)>lb e (lb+lc)>la e (lb+la)>lc){
+   	se(la==lb e la==lc e lb==lc){
+   		escreva("Esse triângulo é equilátero")
+   		}
+   		senao se(la !=lb e lb !=lc e la !=lc){
+   			escreva("Esse triângulo é escaleno")
+   			}
+   			senao{
+   				escreva("Esse triângulo isósceles")
+   			} 
+   	    }
+   senao{
+   	escreva("Isso não é um triângulo")
+       }
+   }
+}
