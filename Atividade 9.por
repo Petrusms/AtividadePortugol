@@ -16,3 +16,5 @@ programa {
     valor = latas*480
     escreva("Você deve comprar ",latas," lata de tinta para fazer a pintura, o valor a ser pago sera de R$ ", valor )
     } //code imcompleto
+ } 
+ }
