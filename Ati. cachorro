@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	real kg
+	cadeia nome
+	
+	     escreva("Qual o nome do seu cachorro?:")
+	     leia(nome)
+	     escreva("Mas que belo nome esse ",nome, "\n")
+		escreva("Quantos kg tem seu cachorro?:")
+		leia(kg)
+		
+		se(kg<=2){
+			escreva("Esse cachorro late fino: au au")}
+	     senao se (kg<=10){
+	     escreva("Esse cachorro tem um belo latido: auuuuu")}
+	     senao{
+	     	escreva("Esse cachorro late grosso: Woof Woof")}
+		
+	}
+}
