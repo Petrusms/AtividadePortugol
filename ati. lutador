@@ -1,0 +1,26 @@
+programa
+{
+	inclua biblioteca Util -->t
+	
+	funcao inicio()
+	{
+	  cadeia resposta, nome
+	  real peso, altura
+	
+	  
+		escreva("Que lado você escolhe direito ou esquerdo:")
+		leia(resposta)
+		t.aguarde(1000)
+		escreva("Que nome você deseja colocar:")
+		leia(nome)
+		t.aguarde(1000)
+		escreva("Que altura você deseja colocar:")
+		leia(altura)
+		t.aguarde(1000)
+		escreva("Que peso você deseja colocar:")
+		leia(peso)
+
+	escreva("Do lado", resposta, ", pesando", peso,"kg, e com altura de", altura, ", seja bem vindo ao ringue", nome)
+	}
+		 
+}
