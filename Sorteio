@@ -1,0 +1,16 @@
+programa
+{
+	inclua biblioteca Util -->u
+	
+	funcao inicio()
+	{
+	inteiro resul
+	resul = u.sorteia(1,2)
+	se(resul==2){
+	escreva("O lado sorteado da moeda foi coroa!")}
+	senao{
+	escreva("O lado sorteado da moeda foi cara!")}
+		
+	}
+}
+
