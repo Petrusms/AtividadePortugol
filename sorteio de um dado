@@ -1,0 +1,24 @@
+programa
+{
+	inclua biblioteca Util --> u
+	
+	
+
+		inteiro chute, n, rodadas = 0
+	funcao inicio()
+	{
+		escreva("Escolha um numero de 1 a 6: ")
+		leia(chute)
+		n = u.sorteia(1,6)
+
+
+		enquanto(chute!=n){
+			escreva("Escolha um numero de 1 a 6: ")
+		leia(chute)
+		n = u.sorteia(1,6)
+		rodadas ++
+		}
+		escreva("Voce acertou!!!!!!!!!!! em ", rodadas++, " rodadas")
+		
+	}
+}
