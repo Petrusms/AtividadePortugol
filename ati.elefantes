@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+    inteiro elefante = 0
+    escreva("1 elefante incomoda muita gente, ")
+
+	enquanto(elefante<=99){
+		elefante++
+		se(elefante>1)
+		 escreva(elefante, " elefantes incomoda muito gente",", ")
+		 elefante++
+		  escreva(elefante, " elefantes incomoda muito mais","\n")}
+		
+	}
+}
