@@ -1,0 +1,37 @@
+programa
+{
+	inclua biblioteca Matematica
+ -->m
+	
+	funcao inicio()
+	{
+		inteiro  a, b, c, raiz
+		real  x1, x2, delta
+
+		escreva("Digite um número para calcular bhaskara: ")
+		leia(a)
+		escreva("Digite um segundo número para calcular bhaskara: ")
+		leia(b)
+		escreva("Digite um terceiro número para calcular bhaskara:")
+		leia(c)
+
+		escreva(a,"x²+", b,"x+",c,"\n")
+		escreva(" a: ",a,"\n"," b: ",b, "\n"," c: ",c)
+		delta=b*b-4*a*c
+		escreva("\n", "Na formula o delta equivale a ", delta)
+
+		raiz=m.raiz(delta,2)
+
+		se(delta<0){
+			escreva("\n","Não pussui resposta com o delta negativo")
+		}
+		senao{
+			raiz=m.arredondar(raiz,2)
+			x1 = (-b+raiz)/2*a
+			x2 = (-b-raiz)/2*a
+			
+			escreva("\n","Seu x1=",x1," e seu x2=",x2)
+			
+		}
+	}
+}
