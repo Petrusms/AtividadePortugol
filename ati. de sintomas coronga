@@ -1,0 +1,36 @@
+programa
+{
+	
+	funcao inicio()
+	{
+   logico c, t, f, dg, dr
+
+	          escreva("Você está com coriza?(responda com verdadeiro ou falso): ")
+		leia(c)
+			escreva("Você está com tosse?(responda com verdadeiro ou falso): ")
+		leia(t)
+			escreva("Você está com febre?(responda com verdadeiro ou falso): ")
+		leia(f)
+			escreva("Você está com dor de garganta?(responda com verdadeiro ou falso): ")
+		leia(dg)
+			escreva("Você está com dificuldade respirátoria?(responda com verdadeiro ou falso): ")
+		leia(dr)
+		
+		 se (dr == verdadeiro){
+			escreva("Você está com Covid")
+        	}
+		senao se(c ou t ou f ou dg == verdadeiro){
+			escreva("Você está com sintomas comuns")
+		}
+		senao se(c e t ou t e f ou c e f ou dg e c ou dg e t ou dg e f == verdadeiro){
+			escreva("Você está com sintomas comuns")
+		}
+		senao se(c e t e f ou c e t e dg ou c e f e dg ou t e f e dg == verdadeiro){
+			escreva("Você está com sintomas comuns")
+		}
+		senao se ( c e t e f e dg == verdadeiro){
+			escreva("Você está com sintomas comuns")
+		}		
+		
+	}
+}
