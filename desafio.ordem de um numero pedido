@@ -9,20 +9,21 @@ programa
      leia(n1)
       escreva("Fale um segundo número qualquer inteiro: ")
      leia(n2)
-    
-se(n1>n2){
-   faca{
-   	escreva(n1, "\n") 
-   n1--} enquanto(n1!= n2)
-    escreva(n1,"\n")}
-	
-    
-    senao { escreva(n1,"\n")
-   enquanto(n1!= n2)
-    {n1++
-    escreva(n1, "\n")}
-    }
-      
-	}
-	
+
+     se(n1>n2){
+     enquanto(n1!=n2){
+     	escreva(n1," ")
+     	n1--
+      }
+      escreva(n1,"\n")
+     }
+      senao{
+        enquanto(n1!=n2){
+      	escreva(n1," ")
+      	n1++
+       }
+       escreva(n2)
+       }
+     
+   } 
 }
