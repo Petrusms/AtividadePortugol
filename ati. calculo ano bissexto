@@ -1,0 +1,25 @@
+programa {
+	
+  funcao inicio() {
+
+    inteiro ano
+ 
+    escreva("Informe um ano: ")
+    leia(ano)
+    
+   se(ano<=0){
+   	ano=2023
+   	se(((ano % 4 == 0) e (ano % 100 != 0)) ou (ano % 400 == 0)) {
+      escreva("O ano informado é bissexto.")
+   	}
+   	senao{ escreva("O ano informado não é bissexto.")
+    }
+   }
+    senao se (((ano % 4 == 0) e (ano % 100 != 0)) ou (ano % 400 == 0)) {
+      escreva("O ano informado é bissexto.")
+    }
+     senao {
+      escreva("O ano informado não é bissexto.")
+    }
+  }
+}
