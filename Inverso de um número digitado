@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro n, inverso=0
+		escreva("Digite um número: ")
+		leia(n)
+
+	 enquanto (n != 0) {
+        inverso = (inverso * 10) + (n % 10)
+        n = n / 10
+      }
+      escreva("O valor original é: ", n)
+      escreva("\nO valor invertido é: ", inverso)
+	}
+}
