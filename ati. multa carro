@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro km, multa, acima
+		escreva("Qual a sua velocidade em km/h: ")
+		leia(km)
+
+		se(km>80){
+			acima=km-80
+			multa=acima*7
+			escreva("Como você estava acima da velocidade permitida, será multado em R$",multa," pois estava a ",acima,"km/h acima do permitido")
+		}
+		senao{
+			escreva("Está tudo certo")
+		}
+	}
+}
