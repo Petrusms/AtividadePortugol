@@ -28,5 +28,8 @@ programa {
        senao se ((n2>n1) e (n1>n3)) {
         escreva(n2,">",n1,">",n3)
       } 
+      senao{
+      	escreva("Os números não podem ser iguais")
+      }
     }
   }
