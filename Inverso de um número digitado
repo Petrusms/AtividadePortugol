@@ -3,15 +3,16 @@ programa
 	
 	funcao inicio()
 	{
-	inteiro n, inverso=0
+	inteiro n, inverso=0, sn
 		escreva("Digite um número: ")
 		leia(n)
+		sn=n
 
 	 enquanto (n != 0) {
         inverso = (inverso * 10) + (n % 10)
         n = n / 10
       }
-      escreva("O valor original é: ", n)
+      escreva("O valor original é: ", sn)
       escreva("\nO valor invertido é: ", inverso)
 	}
 }
