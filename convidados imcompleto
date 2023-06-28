@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia convs[5], convb
+
+		convs[0] = "muzy"
+		convs[1] = "ramon"
+		convs[2] = "arnold"
+		convs[3] = "cbum"
+		convs[4] = "ls"
+
+         escreva("Buscar convidado: ")
+		leia(convb)
+		
+      para(inteiro i = 0; i<5; i++){
+
+      	escreva(i+1,"->",convs[i])
+    
+
+      se(convs[i] == convb){
+
+      	escreva("O convidado", convs[i], " está na lista\n")
+      	pare
+      }
+      senao{
+      	escreva("O nome solicitado não foi convidado para festa")
+      	pare
+      }
+      	
+      }
+    }
+  }
