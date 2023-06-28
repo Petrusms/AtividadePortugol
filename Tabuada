@@ -28,7 +28,7 @@ programa
 		escreva("Digite qualquer number; ")
 		leia(n)
 
-		para(inteiro t=0;t<10;n2++){
+		para(inteiro t=0;t<=10;n2++){
 			t=n2*n
 			escreva("\n",n2,"x",n,"=",t)
 			
