@@ -16,3 +16,22 @@ programa
 	}
 }
 
+ou 
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n,n2=0
+
+		escreva("Digite qualquer number; ")
+		leia(n)
+
+		para(inteiro t=0;t<10;n2++){
+			t=n2*n
+			escreva("\n",n2,"x",n,"=",t)
+			
+		}
+	}
+}
