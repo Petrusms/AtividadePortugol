@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    inteiro quantidade, soma, numero
+ 
+    soma = 0
+ 
+    escreva("Quantidade de números: ")
+    leia(quantidade)
+ 
+    escreva("\n")
+    para (inteiro i = 1; i <= quantidade; i++) {
+      escreva("Informe o ", i, ".o número: ")
+      leia(numero)
+
+      soma = soma + numero
+    }
+    escreva("\nA soma dos números é: ", soma, "\n\n")
+  }
+}
