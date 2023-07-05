@@ -16,3 +16,25 @@ programa
 		}
 	}
 }
+
+ou 
+
+programa
+{
+	
+	funcao inicio()
+	{
+      inteiro quant_tri
+		escreva("Qual o número de * que deseja no seu triângulo de 90 graus?: ")
+		leia(quant_tri)
+
+		para(inteiro des_tri = 0; des_tri <= quant_tri ; des_tri++){
+			para(inteiro col_tri = 1;  col_tri <= des_tri ; col_tri++){
+				 escreva(col_tri)
+				 				 				   
+			}			
+			 escreva("\n")
+			 			  
+		}
+	}
+}
