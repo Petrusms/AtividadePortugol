@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro quant_quad
+		
+          escreva("Qual a quantidade de * deseja de lado do quadrado?: ")
+          leia(quant_quad)
+
+		para(inteiro linha = 1; linha <=quant_quad; linha++){
+			para(inteiro coluna=1; coluna<=quant_quad; coluna++){
+				escreva("* ")
+			}
+			escreva("\n")
+		}
+	}
+}
