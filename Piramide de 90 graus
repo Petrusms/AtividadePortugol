@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+      inteiro quant_quad
+		escreva("Qual o número de * que deseja no seu triângulo de 90 graus: ")
+		leia(quant_quad)
+
+		para(inteiro des_quad = 0; des_quad <= quant_quad; des_quad++){
+			para(inteiro col_quad = 0;  col_quad <= des_quad ; col_quad++){
+				 escreva("*")
+                   
+			}
+			 escreva("\n")
+		}
+	}
+}
