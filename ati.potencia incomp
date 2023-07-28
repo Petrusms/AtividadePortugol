@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+ 	   inteiro base, expo, resul
+
+ 	   escreva("Informe um número: ")
+ 	   leia(base)
+        escreva("Informe um expoente: ")
+ 	   leia(expo)
+ 	   resul=base
+
+        para(inteiro i = 1; i<expo; i++){
+        	resul = base*resul
+        }
+	     escreva(resul)
+	}
+}
