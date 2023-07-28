@@ -5,8 +5,8 @@ programa
 	{
 		inteiro B = 200000
 		inteiro Anos = 0
-		para(inteiro A = 80000; A<=B ;B=B+B*1.5/100){
-			A=A+A*3/10
+		para(inteiro A = 80000; A<=B ;B+=B*1.5/100){
+			A+=A*3/10
 			Anos++
 		}
 		escreva("É necessario ",Anos," anos")
