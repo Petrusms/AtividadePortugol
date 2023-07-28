@@ -24,8 +24,12 @@ programa
 	
 	funcao inicio()
 	{
+
+	inteiro x,y
+	escreva("Informe um número e um expoente: ")
+	leia(x,y)
  	
-        potencia(2,3)
+        potencia(x,y)
  	   
  	   
 
