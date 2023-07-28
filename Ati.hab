@@ -1,0 +1,14 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real B = 200000.0
+		inteiro Anos = 0
+		para(real A = 80000.0; A<=B;B=B+B*0.015){
+			A=A+A*0.3
+			Anos++
+		}
+		escreva("É necessario ",Anos," anos")
+	}
+}
