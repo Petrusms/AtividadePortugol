@@ -17,3 +17,28 @@ programa
 	     escreva(resul)
 	}
 }
+ou 
+programa
+{
+	
+	
+	funcao inicio()
+	{
+ 	
+        potencia(2,3)
+ 	   
+ 	   
+
+      	     
+	}
+	funcao potencia( inteiro base, inteiro expo ){
+		inteiro resul=base
+		  para(inteiro i = 1; i<expo; i++){
+        	resul = base*resul
+        }
+	     escreva(resul)
+	    
+	     	
+
+	}
+}
