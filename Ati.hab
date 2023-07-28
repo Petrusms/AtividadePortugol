@@ -3,10 +3,10 @@ programa
 	
 	funcao inicio()
 	{
-		real B = 200000.0
+		inteiro B = 200000
 		inteiro Anos = 0
-		para(real A = 80000.0; A<=B;B=B+B*0.015){
-			A=A+A*0.3
+		para(inteiro A = 80000; A<=B ;B=B+B*1.5/100){
+			A=A+A*3/10
 			Anos++
 		}
 		escreva("É necessario ",Anos," anos")
