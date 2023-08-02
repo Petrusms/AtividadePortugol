@@ -41,3 +41,30 @@ programa
 		}
 	}
 }
+ou
+programa
+{
+	
+	funcao inicio()
+	{
+
+		inteiro n 
+
+		escreva("Informe um valor: ")
+		leia(n)
+		
+		para(inteiro i=1; i <= n; i++){
+
+			para(inteiro j=1; j <= n; j++){
+				se(i > j) {
+					escreva("- ")
+				}
+				senao {
+					escreva("* ")
+				}
+			}
+
+			escreva("\n")
+		}
+	}
+}
