@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro limit
+
+		escreva("Quantas linhas no TRIANGULO DE FLOYD?")
+		leia(limit)
+		para(inteiro i=1; i <= limit; i++){
+
+			para(inteiro j=1; j <= i; j++){
+				escreva(contador, " ")
+				contador++
+			}
+
+			escreva("\n")
+		}
+	}
+}
