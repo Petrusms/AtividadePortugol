@@ -35,15 +35,13 @@ programa
 ou
 programa
 {
-	inclua biblioteca Util -->u
 	
 	funcao inicio()
 	{
 	cadeia hero[5] = {"panter black","batman","deadpool","saitama","sx"}
-     inteiro h=0, l=1
-     para(inteiro n = 0;n<=4;n++){
+     inteiro l=1
+     para(inteiro h = 0;h<=4;h++){
      	escreva(l," LUGAR: ",hero[h],"\n")
-     	h++
      	l++
      }
 	
