@@ -13,34 +13,35 @@ programa
 
          escreva("Buscar convidado: ")
 		leia(convb)
-		
-      para(inteiro i = 0; i<5; i++){
 
-      	escreva(i+1,"->",convs[i])
-    
+		      para(inteiro i = 0; i<5; i++){
 
-      se(convs[i] == convb){
+      	escreva(i+1,"->",convs[i],"\n")
+		      }		  
 
-      	escreva("O convidado", convs[i], " está na lista\n")
-      	pare
-      }
+      se(convb == "muzy" ou convb == "ramon" ou convb == "arnold" ou convb == "cbum" ou convb == "ls"){
+      	 
+      	escreva(" O convidado ", convb, " está na lista\n")
+      	
+       } 
       senao{
       	escreva("O nome solicitado não foi convidado para festa")
-      	pare
+      	
       }
       	
       }
     }
-  }
+
 ou
 programa
 {
+	inclua biblioteca Util -->u
 	
 	funcao inicio()
 	{
-	cadeia hero[5] = {"panter black","batman","deadpool","saitama","sx"}
+	cadeia hero[10] = {"panter black","batman","deadpool","saitama","sx","","","","",""}
      inteiro l=1
-     para(inteiro h = 0;h<=4;h++){
+     para(inteiro h=0 ; h < u.numero_elementos(hero) ; h++){
      	escreva(l," LUGAR: ",hero[h],"\n")
      	l++
      }
