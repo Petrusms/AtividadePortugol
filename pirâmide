@@ -1,0 +1,90 @@
+programa {
+
+  funcao inicio() {
+    inteiro quant_linhas, contador_linhas = 1
+  
+    escreva("Informe a quantidade de linhas da pirâmide: ")
+    leia(quant_linhas) 
+     
+    escreva("\n")
+    para (inteiro i = quant_linhas; i > 0; i--) {
+
+      para (inteiro j = 1; j <= i; j++) {
+        escreva(" ")
+      }
+      
+      para (inteiro j = 1; j <= contador_linhas; j++) {
+        escreva(contador_linhas, " ")
+        
+      }
+      
+      escreva("\n")
+      contador_linhas = contador_linhas + 1
+    }
+  }
+}
+ou 
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n 
+		
+		escreva("Fale um número para fazer a piramide: ")
+		leia(n)
+
+		inteiro colunas = n - 1
+
+
+		para(inteiro i=1; i <= n; i++){
+			
+			para(inteiro j=1; j <= colunas; j++){
+				escreva(" ")
+			}
+
+			para(inteiro k=1; k <= i; k++){
+				escreva("* ")
+			}
+
+			colunas--
+
+			escreva("\n")
+		}
+		
+	}
+}
+ou
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n 
+
+		escreva("Informe um valor para piramide: ")
+		leia(n)
+
+
+		inteiro z = 1
+		
+		
+		para(inteiro i=1; i <= n; i++){
+
+			para(inteiro j = n-1; j >= i; j--){
+				escreva(" ")
+
+			}
+
+			para(inteiro k=1; k <= z; k++){
+				escreva("*")
+			}
+
+			z+=2
+
+			escreva("\n")
+
+		}
+		
+	}
+}
