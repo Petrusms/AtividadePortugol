@@ -20,8 +20,6 @@ programa
 ou 
 programa
 {
-	
-	
 	funcao inicio()
 	{
 
@@ -30,10 +28,7 @@ programa
 	leia(x,y)
  	
         potencia(x,y)
- 	   
- 	   
-
-      	     
+ 	       
 	}
 	funcao potencia( inteiro base, inteiro expo ){
 		inteiro resul=base
@@ -41,8 +36,5 @@ programa
         	resul = base*resul
         }
 	     escreva(resul)
-	    
-	     	
-
 	}
 }
