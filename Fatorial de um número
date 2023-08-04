@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	  inteiro f ,vl ,af ,s
+    
+	  escreva("Informe um valor: ")
+	  leia(f)
+       vl = f
+       af=f
+        
+	  para(inteiro p = 1 ; p < f ; p++){
+	  	af=af-1
+	  	vl=vl*af	
+	  }
+	  escreva("O fatorial de ",f," é igual a ",vl)
+	}
+}
