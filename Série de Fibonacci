@@ -1,0 +1,39 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro sq = 1, sqa = 1,sqs = 0
+
+      escreva(0)
+      
+	    para(inteiro l = 0;sqs<=500;l++){
+
+	    	sq=sqs+sqa
+		sqs=sqa
+		sqa=sq
+		escreva("-",sqs)
+	    }
+	}
+}
+ou
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro sq = 1 , sqa = 1 ,sqs = 0 , lmt
+
+      escreva("Informe um valor de até onde deseja que a sequêcia va: ")
+      leia(lmt)
+      escreva(0)
+      
+	    para(inteiro l = 0;sqs<=lmt;l++){
+
+	    	sq=sqs+sqa
+		sqs=sqa
+		sqa=sq
+		escreva("-",sqs)
+	    }
+	}
+}
