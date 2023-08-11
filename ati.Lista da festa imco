@@ -1,0 +1,52 @@
+programa
+{
+	cadeia convidados[100]
+	
+	funcao inicio()
+	{
+		cadastro()
+		listagem()
+		remover()
+	}
+	funcao cadastro(){
+
+		cadeia convidado
+
+        para(inteiro i = 0 ; i < 5 ; i++){
+        	
+		escreva("Fale seu personagem: ")
+		leia(convidado)
+		
+		 se(convidados[i] == ""){
+		 	convidados[i] = convidado
+		 	
+		 	}
+		}
+	}
+
+	funcao listagem(){
+
+		escreva("  Convidados  \n")
+   		
+		para(inteiro i = 0 ; i < 5 ; i++){
+			escreva("1-",convidados[i])
+			pare
+		}
+		
+	}
+	funcao remover(){
+
+ 		cadeia convidado
+ 		
+ 		para(inteiro i = 0 ; i < 100 ; i++){
+          escreva("Que convidado deseja remover?\n")
+          leia(convidado)
+          
+		se(convidados[i] == convidado){
+			convidado = ""
+			escreva("Conviado removido")
+			
+			}
+		}
+	}
+}
