@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro lista[10]
+		
+		para(inteiro i = 0 ; i < 10 ; i++){
+			escreva("informe um valor: ")
+			leia(lista[i])
+               
+		}
+		para(inteiro i = 0 ; i < 10 ; i++){
+		se(lista[i] % 2 == 0){
+			escreva(lista[i], " par, e se encontra na posição ",i, "\n")
+		}
+		senao{
+			escreva(lista[i]," impar, e se encontra na posição ",i, "\n")
+		}
+		}
+		
+	}
+}
