@@ -1,0 +1,32 @@
+programa
+{
+	inclua biblioteca Util
+	
+	funcao inicio()
+	{
+		inteiro lista[30] ,number = 0, chute, rep = 0
+		
+		para(inteiro i = 0 ; i < 30 ; i++){
+			
+			lista[number] = Util.sorteia(1,15)
+			number++
+               
+		}
+		escreva("Informe um chute: ")
+		leia(chute)
+		
+		para(inteiro i = 0 ; i < 30 ; i++){
+			
+		se(chute == lista[i] ){
+			escreva("Valor encontrado na posição ", i,"\n")
+			rep++
+			}
+		}
+		se(rep == 1){
+		escreva("E repitiu ", rep, " vez")
+		}
+		senao{
+		escreva("E repitiu ", rep, " vezes")
+		}
+	}
+}
