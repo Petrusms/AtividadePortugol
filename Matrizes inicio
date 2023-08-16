@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia name [3][3] 
+		
+          name[0][0] = "Rick\n"
+          name[0][1] = "Morty\n"
+          name[0][2] = "Miranha\n"
+          name[1][0] = "Mickey\n"
+          name[1][1] = "Erick catman\n"
+          name[1][2] = "Peppa\n"
+          name[2][0] = "Finn\n"
+          name[2][1] = "Jack\n"
+          name[2][2] = "Summer\n"
+		
+
+		para(inteiro coluna = 0 ; coluna < 3 ; coluna++){
+			para(inteiro linha = 0 ; linha < 3 ; linha++){
+			escreva(name[linha][coluna])
+		}
+		}
+	}
+}
