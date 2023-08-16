@@ -1,0 +1,30 @@
+programa
+{
+	inclua biblioteca Tipos --> ti
+	inclua biblioteca Texto
+ --> t
+	
+	
+	funcao inicio()
+	{
+		inteiro number[3][3]
+		inteiro resul = 0
+
+			para(inteiro coluna = 0 ; coluna < 3 ; coluna++){
+			para(inteiro linha = 0 ; linha < 3 ; linha++){
+			escreva("Informe um número: ")
+			leia(number[linha][coluna])
+		}
+		}
+			para(inteiro coluna = 0 ; coluna < 3 ; coluna++){
+				escreva("\n")
+			para(inteiro linha = 0 ; linha < 3 ; linha++){
+			//Simples: 
+			escreva(number[linha][coluna]," ")
+			// Avançado: escreva(t.preencher_a_esquerda(' ', 8,ti.inteiro_para_cadeia(number[linha][coluna],10)))
+			resul+=number[linha][coluna]
+		}
+		}
+		escreva("\nO resultado da soma desses valores é ",resul)
+	}
+}
