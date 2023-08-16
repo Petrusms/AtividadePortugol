@@ -7,7 +7,7 @@ programa {
     escreva("Qual a velocidade do link de Internet usado em Mbps?:")
     leia(mbps)
 
-    velodow = mb/(mbps/8)
+    velodow = (mb*8)/(mbps/8)
     se(velodow<60){
     escreva("O arquivo sera baixado em ", velodow," segundos")}
     senao{
