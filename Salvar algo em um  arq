@@ -1,0 +1,16 @@
+programa
+{
+	inclua biblioteca Arquivos -->arq
+	
+	funcao inicio()
+	{    
+		//criar um arquivo, no caso desse foi dados.txt  , antes disso salvar esse antes de criar o outro arquivo
+		inteiro end_arq = arq.abrir_arquivo("./dados.txt", arq.MODO_ESCRITA)
+		cadeia nomes
+		para(inteiro i=0; i<5;i++){
+			escreva("O que deseja colocar no arquivo?")
+			leia(nomes)
+		arq.escrever_linha(nomes, end_arq)
+		}
+}
+}
