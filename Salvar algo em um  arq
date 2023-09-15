@@ -4,7 +4,7 @@ programa
 	
 	funcao inicio()
 	{    
-		//criar um arquivo, no caso desse foi dados.txt  , antes disso salvar esse antes de criar o outro arquivo
+		//criar um arquivo para salvar o codigo e depois criar um arquivo que vai escrever dentro dele que no caso desse foi dados.txt, tudo dentro na mesma pasta
 		inteiro end_arq = arq.abrir_arquivo("./dados.txt", arq.MODO_ESCRITA)
 		cadeia algodentroarq
 		para(inteiro i=0; i<5;i++){
