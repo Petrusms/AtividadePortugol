@@ -1,0 +1,16 @@
+programa
+{
+	inclua biblioteca Arquivos--> arq
+	
+	funcao inicio()
+	{
+	//Para funcionar salve o codigo em um arquivo dentro de uma pasta onde esteja o arquivo que deseja ler
+	cadeia linha = ""
+		inteiro arq = arq.abrir_arquivo("./alice.txt", arq.MODO_LEITURA)
+
+		enquanto( nao arq.fim_arquivo(arq)){
+			linha = arq.ler_linha(arq)
+			escreva(linha, "\n")
+		}
+	}
+}
