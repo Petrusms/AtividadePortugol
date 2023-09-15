@@ -1,0 +1,18 @@
+programa
+{
+	inclua biblioteca Texto
+ --> t
+	
+	funcao inicio()
+	{
+	cadeia nome
+
+	escreva("Informe um nome: ")
+	leia(nome)
+	converter_maisculo(nome)
+	escreva(nome)
+	}
+	funcao converter_maisculo(cadeia &nome){
+		nome = t.caixa_alta(nome)
+	}
+}
