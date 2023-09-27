@@ -36,7 +36,7 @@ programa{
 	  	
 		para(inteiro h=0;h<NumCarac;h++){//percorre cada uma das letras da frase informada
 
-			esta_no_alfabeto = falso
+			
 			letracarac = t.obter_caracter(texto,h)
 			letra = ti.caracter_para_cadeia(letracarac)
 			
@@ -44,14 +44,9 @@ programa{
 			se(letra== alfabeto[i]){
 				posicao = i + chave
 				posicao = posicao % 26
-				escreva("\nO texto criptografada é ", alfabeto[posicao])
-				esta_no_alfabeto = verdadeiro
-				pare
-				}
+				escreva(alfabeto[posicao])
+			    }
 			}
-		 }
-		 se(esta_no_alfabeto==falso){
-			escreva(letra)
 		 }
 	  }
 	  funcao descriptografar(cadeia texto, inteiro chave){
@@ -60,11 +55,11 @@ programa{
 	  	inteiro NumCarac = t.numero_caracteres(texto)
 	  	caracter letracarac=' '
 	  	cadeia letra = " "
-          logico esta_no_alfabeto 
+       
 	  	
 		para(inteiro h=0;h<NumCarac;h++){
 
-			esta_no_alfabeto=falso
+			
 			letracarac = t.obter_caracter(texto,h)
 			letra = ti.caracter_para_cadeia(letracarac)
 			
@@ -73,14 +68,12 @@ programa{
 				posicao = i - chave
 				se(posicao<0){
 					posicao = posicao + 26}
-				escreva("\nO texto descriptografada é ", alfabeto[posicao])
-				esta_no_alfabeto = verdadeiro
+				escreva(alfabeto[posicao])
+			
 				pare
 				}
 			}
 		 }
-		 se(esta_no_alfabeto==falso){
-			escreva(letra)
-		 }
+		 
 	 }
 }
