@@ -3,7 +3,7 @@ programa{
 	inclua biblioteca Texto -->t 
 	inclua biblioteca Tipos -->ti
 	
-   const cadeia alfabeto[26] = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"}
+   const cadeia alfabeto[26] = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"}
          
 	  funcao inicio() {
 	  	
@@ -65,8 +65,8 @@ programa{
 	  	caracter letracarac=' '
 	  	cadeia letra = " "
           logico esta_no_alfabeto
-          cadeia resposta,t
-          inteiro c
+          cadeia resposta,tex,parar
+          inteiro cha
 	  	
 		para(inteiro h=0;h<NumCarac;h++){
 
@@ -95,10 +95,11 @@ programa{
 		 }
 		 senao{
 		 	escreva("Informe novamente a palavra criptografada:\n")
-		 	leia(t)
+		 	leia(tex)
 		 	escreva("Informe outra chave:\n")
-		 	leia(c)
-		 	descriptografar(t, c)	 		
+		 	leia(cha)
+		 	descriptografar(tex, cha)
+	 		
 			 }	 	 	
 	   }
 }
