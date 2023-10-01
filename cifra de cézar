@@ -65,7 +65,7 @@ programa{
 	  	caracter letracarac=' '
 	  	cadeia letra = " "
           logico esta_no_alfabeto
-          cadeia resposta,tex,parar
+          cadeia resposta,tex
           inteiro cha
 	  	
 		para(inteiro h=0;h<NumCarac;h++){
@@ -92,6 +92,16 @@ programa{
 		 se(resposta=="sim"){
 		 	escreva("Deseja decodificar mais alguma coisa?\n")
 		 	leia(resposta)
+		 	se(resposta=="sim"){
+		 		escreva("Que palavra deseja descriptografar?\n")
+	  	     leia(tex)
+	  	     escreva("Em qual chave deseja testar?\n")
+	  	     leia(cha)
+	  	     descriptografar(tex, cha)
+		 	}
+		 	senao{
+		 		escreva("Muito obrigado por ter usado este programa")
+		 	}
 		 }
 		 senao{
 		 	escreva("Informe novamente a palavra criptografada:\n")
@@ -99,7 +109,6 @@ programa{
 		 	escreva("Informe outra chave:\n")
 		 	leia(cha)
 		 	descriptografar(tex, cha)
-	 		
-			 }	 	 	
+		 	} 	 	 	
 	   }
 }
