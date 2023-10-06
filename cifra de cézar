@@ -22,12 +22,23 @@ programa{
 			criptografar(t,c)
 			pare
 	  	caso 2:
+	  	escreva("O que deseja fazer, descriptografar uma por uma, ou ja ver todas a opções descripitografadas?\n1 Todas as opções\n2 Uma por Uma\n")
+	  	leia(opcao)
+	  	escolha(opcao){
+	  		caso 1:
+	  	     escreva("Que palavra deseja descriptografar?\n")
+	  	     leia(t)
+	  	     c=1
+	  	     descriptografar2(t, c)
+	  	     pare
+	  	     caso 2:
 	  	     escreva("Que palavra deseja descriptografar?\n")
 	  	     leia(t)
 	  	     escreva("Em qual chave deseja testar?\n")
 	  	     leia(c)
 	  	     descriptografar(t, c)
 	  	     pare
+	  			    }
 		  }
 	  }
 	  funcao criptografar(cadeia texto,inteiro chave){
@@ -67,7 +78,7 @@ programa{
           logico esta_no_alfabeto
           cadeia resposta,tex
           inteiro cha
-	  	
+
 		para(inteiro h=0;h<NumCarac;h++){
 
 			esta_no_alfabeto=falso
@@ -111,4 +122,40 @@ programa{
 		 	descriptografar(tex, cha)
 		 	} 	 	 	
 	   }
+	   funcao descriptografar2(cadeia texto, inteiro chave){
+
+	  	inteiro posicao
+	  	inteiro NumCarac = t.numero_caracteres(texto)
+	  	caracter letracarac=' '
+	  	cadeia letra = " "
+          logico esta_no_alfabeto
+          cadeia resposta,tex
+          inteiro cha
+
+	  	para(inteiro r=1;r<26;r++){
+	  	chave=r
+
+		para(inteiro h=0;h<NumCarac;h++){
+
+			esta_no_alfabeto=falso
+			letracarac = t.obter_caracter(texto,h)
+			letra = ti.caracter_para_cadeia(letracarac)
+			
+		para(inteiro i=0;i<26;i++){
+			se(letra== alfabeto[i]){
+				esta_no_alfabeto=verdadeiro
+				posicao = i - chave
+				se(posicao<0){
+					posicao = posicao + 26}
+				escreva(alfabeto[posicao])
+				}
+			}
+			se(esta_no_alfabeto==falso){
+				escreva(" ")	
+			}
+		 }
+		 escreva("\n")
+	  }
+	  escreva("Muito obrigado por ter usado este programa")
+    }
 }
